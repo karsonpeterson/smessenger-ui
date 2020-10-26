@@ -5,7 +5,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "repository": {
     "type": "git",
@@ -18,16 +19,24 @@
   },
   "homepage": "https://github.com/karsonpeterson/smessenger-ui#readme",
   "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "@apollo/react-ssr": "^4.0.0",
     "bootstrap": "^4.5.3",
+    "graphql": "^15.4.0",
+    "isomorphic-unfetch": "^3.1.0",
     "next": "^9.5.5",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "1.19.0",
     "@types/node": "^12.19.1",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "@graphql-codegen/typescript-operations": "1.17.8",
+    "@graphql-codegen/typescript": "1.17.11",
+    "@graphql-codegen/typescript-react-apollo": "2.0.7"
   }
 }
